@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#registro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label,
+input,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* styles.css */
+
+/* Estilos existentes... */
+
+#examenes {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#preguntas {
+    margin-bottom: 10px;
+}
+
+#preguntas h3 {
+    margin-top: 0;
+}
+
+#preguntas .pregunta {
+    margin-bottom: 10px;
+}
+
+#preguntas .pregunta label {
+    display: block;
+    font-weight: bold;
+}
+
+#preguntas .pregunta input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#preguntas .pregunta .opciones {
+    margin-left: 20px;
+}
+
+#preguntas .pregunta .opciones input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#agregarPregunta {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#agregarPregunta:hover {
+    background-color: #555;
+}

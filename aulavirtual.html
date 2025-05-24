@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Virtual - Flipped Classroom</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+  
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #055721;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🎓 Mi Aula Virtual</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item active"><a class="nav-link active" href="aulavirtual.html">Aula Virtual</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<header class="text-white text-center py-5" style="background-color: #049835;">
+    <div class="container">
+      <h1 class="display-4">👮Aula Virtual</h1>
+      <p class="lead">Aprende a tu ritmo con la metodología Flipped Classroom</p>
+    </div>
+</header>
+
+
+<div class="container mt-4">
+  <h1 class="text-center mb-4">📚 Clases</h1>
+  <ul class="nav nav-tabs" id="tabClases" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#clase1">Clase 1: Constitucion Politica del Perú</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#clase2">Clase 2: Declaración Universal de los DD.HH</button></li>
+    </ul>
+
+
+
+  <div class="tab-content border p-4" id="contenidoClases">
+    
+
+    <!-- Clase 1 -->
+    <div class="tab-pane fade show active" id="clase1">
+      <h3>🎥 Video: Constitución Política</h3>
+      <iframe width="100%" height="250" src="https://www.youtube.com/embed/UcrWe3b_-dw" frameborder="0" allowfullscreen></iframe>
+
+      <h4 class="mt-4">📄 PDF</h4>
+      <a href="documentos/CPDP1993.pdf" class="btn btn-primary" target="_blank">Ver PDF</a>
+
+      <h4 class="mt-4">🔊 Audio explicativo</h4>
+      <audio controls>
+        <source src="audio/CPDP1993.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <h4 class="mt-4">📝 Evaluación</h4>
+      <form id="formClase1" onsubmit="return corregirClase1(event)">
+        <p><strong>1. ¿Toda persona tiene derecho a mantener reserva sobre sus convicciones políticas, filosóficas, religiosas o de cualquier otra índole así como a?</strong></p>
+        <input type="radio" name="preg1Clase1" value="a"> a) Garantizar el secreto de las informaciones<br>
+        <input type="radio" name="preg1Clase1" value="b"> b) Guardar el secreto profesional<br>
+        <input type="radio" name="preg1Clase1" value="c"> c) Garantizar la libertad de información<br>
+        <input type="radio" name="preg1Clase1" value="d"> d) Preservar la reserva de sus convicciones<br>
+        <input type="radio" name="preg1Clase1" value="e"> e) Invocar el secreto a la libertad de conciencia y de religión<br>
+        <div id="resp1Clase1" class="mt-2"></div>
+
+        <p><strong>2. ¿Represión al tráfico ilícito de drogas. El Estado combate y sanciona el tráfico ilícito de drogas. Asimismo, regula?</strong></p>
+        <input type="radio" name="preg2Clase1" value="a"> a) El empleo y comercialización de fármacos<br>
+        <input type="radio" name="preg2Clase1" value="b"> b) La comercialización de productos nocivos<br>
+        <input type="radio" name="preg2Clase1" value="c"> c) El uso de los tóxicos sociales<br>
+        <input type="radio" name="preg2Clase1" value="d"> d) La comercialización de tóxicos<br>
+        <input type="radio" name="preg2Clase1" value="e"> e) El uso de fármacos dependientes<br>
+        <div id="resp2Clase1" class="mt-2"></div>
+
+        <p><strong>3. ¿Educación para la vida y el trabajo. los medios de comunicación social. la formación ética y cívica y la enseñanza de la constitución y de los derechos humanos son?</strong></p>
+        <input type="radio" name="preg3Clase1" value="a"> a) Deberes primordiales del estado<br>
+        <input type="radio" name="preg3Clase1" value="b"> b) La política general del gobierno<br>
+        <input type="radio" name="preg3Clase1" value="c"> c) Obligatorios<br>
+        <input type="radio" name="preg3Clase1" value="d"> d) Actividad discrecional del estado<br>
+        <input type="radio" name="preg3Clase1" value="e"> e) Facultativos<br>
+        <div id="resp3Clase1" class="mt-2"></div>
+
+        <p><strong>4. ¿Jornada ordinaria de trabajo. la jornada ordinaria de trabajo es de 8 horas diarias o 48 horas semanales como máximo. en caso de jornadas acumulativas o atípicas, el promedio de horas trabajadas en el periodo correspondiente?</strong></p>
+        <input type="radio" name="preg4Clase1" value="a"> a) Puede superar dicho máximo<br>
+        <input type="radio" name="preg4Clase1" value="b"> b) Puede superar dicho máximo con anuencia del trabajador<br>
+        <input type="radio" name="preg4Clase1" value="c"> c) Puede superar por disposición expresa del empleador<br>
+        <input type="radio" name="preg4Clase1" value="d"> d) Está en relación a las condiciones laborales<br>
+        <input type="radio" name="preg4Clase1" value="e"> e) No pueden superar dicho máximo<br>
+        <div id="resp4Clase1" class="mt-2"></div>
+
+        <p><strong>5. ¿El voto es personal, igual, libre, secreto y obligatorio hasta los?</strong></p>
+        <input type="radio" name="preg5Clase1" value="a"> a) Sesenta años<br>
+        <input type="radio" name="preg5Clase1" value="b"> b) Setenta años<br>
+        <input type="radio" name="preg5Clase1" value="c"> c) Setenta y cinco años<br>
+        <input type="radio" name="preg5Clase1" value="d"> d) Sesenta y cinco años<br>
+        <input type="radio" name="preg5Clase1" value="e"> e) Ochenta años<br>
+        <div id="resp5Clase1" class="mt-2"></div>
+
+        <p><strong>6. ¿Señale la alternativa que no corresponde: pueden ser sometidos a referéndum?</strong></p>
+        <input type="radio" name="preg6Clase1" value="a"> a) La reforma total o parcial de la constitución<br>
+        <input type="radio" name="preg6Clase1" value="b"> b) La aprobación de normas con rango de ley<br>
+        <input type="radio" name="preg6Clase1" value="c"> c) Las ordenanzas municipales<br>
+        <input type="radio" name="preg6Clase1" value="d"> d) Las materias relativas al proceso de descentralización<br>
+        <input type="radio" name="preg6Clase1" value="e"> e) La reforma total o parcial de un decreto de urgencia<br>
+        <div id="resp6Clase1" class="mt-2"></div>
+
+        <p><strong>7. ¿Suspensión del ejercicio de la ciudadanía. El ejercicio de la ciudadanía se suspende?</strong></p>
+        <input type="radio" name="preg7Clase1" value="a"> a) Por resolución judicial de interdicción<br>
+        <input type="radio" name="preg7Clase1" value="b"> b) Por sentencia con inhabilitación de derechos y deberes<br>
+        <input type="radio" name="preg7Clase1" value="c"> c) Por renuncia voluntaria y expresa a la ciudadanía<br>
+        <input type="radio" name="preg7Clase1" value="d"> d) Por la emisión de norma con rango de ley<br>
+        <input type="radio" name="preg7Clase1" value="e"> e)  Por sentencia absolutoria<br>
+        <div id="resp7Clase1" class="mt-2"></div>
+
+        <p><strong>8. ¿La extradición solo se concede por el poder ejecutivo previo informe?</strong></p>
+        <input type="radio" name="preg8Clase1" value="a"> a) Del poder judicial<br>
+        <input type="radio" name="preg8Clase1" value="b"> b) Del ministerio de relaciones exteriores<br>
+        <input type="radio" name="preg8Clase1" value="c"> c) Del ministerio de justicia<br>
+        <input type="radio" name="preg8Clase1" value="d"> d) De la corte suprema<br>
+        <input type="radio" name="preg8Clase1" value="e"> e) Del juzgado penal correspondiente<br>
+        <div id="resp8Clase1" class="mt-2"></div>
+
+        <p><strong>9. ¿Se reconocen los derechos de sindicación y huelga de los servidores públicos. No están comprendidos?</strong></p>
+        <input type="radio" name="preg9Clase1" value="a"> a) Los miembros del poder ejecutivo incluyendo al presidente de la república<br>
+        <input type="radio" name="preg9Clase1" value="b"> b) Los miembros de las fuerzas armadas y de la policía nacional<br>
+        <input type="radio" name="preg9Clase1" value="c"> c) Los miembros del poder legislativo<br>
+        <input type="radio" name="preg9Clase1" value="d"> d) Los miembros del tribunal constitucional<br>
+        <input type="radio" name="preg9Clase1" value="e"> e) Los miembros del poder judicial<br>
+        <div id="resp9Clase1" class="mt-2"></div>
+
+        <p><strong>10. ¿Marque la alternativa que no corresponde. La república del Perú es?</strong></p>
+        <input type="radio" name="preg10Clase1" value="a"> a) Democrática<br>
+        <input type="radio" name="preg10Clase1" value="b"> b) Social<br>
+        <input type="radio" name="preg10Clase1" value="c"> c) Independiente<br>
+        <input type="radio" name="preg10Clase1" value="d"> d) Soberana<br>
+        <input type="radio" name="preg10Clase1" value="e"> e) Autónoma<br>
+        <div id="resp10Clase1" class="mt-2"></div>
+
+        <p><strong>11. ¿Deberes del estado. Es deber del estado establecer y ejecutar la política de fronteras y promover la integración, particularmente?</strong></p>
+        <input type="radio" name="preg11Clase1" value="a"> a) Nacional<br>
+        <input type="radio" name="preg11Clase1" value="b"> b) Regional<br>
+        <input type="radio" name="preg11Clase1" value="c"> c) Latinoamericano<br>
+        <input type="radio" name="preg11Clase1" value="d"> d) Internacional<br>
+        <input type="radio" name="preg11Clase1" value="e"> e) Trasnacional<br>
+        <div id="resp11Clase1" class="mt-2"></div>
+
+        <p><strong>12. ¿Ejercicio del poder del estado. Ninguna persona, organización, fuerza armada o sector de la población puede arrogarse el ejercicio de ese poder. Hacerlo constituye?</strong></p>
+        <input type="radio" name="preg12Clase1" value="a"> a) Motín o sedición<br>
+        <input type="radio" name="preg12Clase1" value="b"> b) Rebelión o sedición<br>
+        <input type="radio" name="preg12Clase1" value="c"> c) Rebelión o insurrección<br>
+        <input type="radio" name="preg12Clase1" value="d"> d) Motín o insurrección<br>
+        <input type="radio" name="preg12Clase1" value="e"> e) Rebelión o desacato<br>
+        <div id="resp12Clase1" class="mt-2"></div>
+
+        <p><strong>13. ¿Defensa judicial del estado. La defensa de los intereses del estado está a cargo de los procuradores públicos conforme a ley. El estado está exonerado del pago de?</strong></p>
+        <input type="radio" name="preg13Clase1" value="a"> a) Gastos judiciales<br>
+        <input type="radio" name="preg13Clase1" value="b"> b) Gastos notariales<br>
+        <input type="radio" name="preg13Clase1" value="c"> c) Tributos<br>
+        <input type="radio" name="preg13Clase1" value="d"> d) Gastos bancarios<br>
+        <input type="radio" name="preg13Clase1" value="e"> e) Gastos financieros<br>
+        <div id="resp13Clase1" class="mt-2"></div>
+
+        <p><strong>14. ¿Adquisición y renuncia de la nacionalidad. La nacionalidad peruana no se pierde, salvo por renuncia expresa ante?</strong></p>
+        <input type="radio" name="preg14Clase1" value="a"> a) El ministerio de relaciones exteriores<br>
+        <input type="radio" name="preg14Clase1" value="b"> b) El consulado peruano<br>
+        <input type="radio" name="preg14Clase1" value="c"> c) La superintendencia nacional de migraciones<br>
+        <input type="radio" name="preg14Clase1" value="d"> d) Autoridad judicial y/o administrativa competente<br>
+        <input type="radio" name="preg14Clase1" value="e"> e) Autoridad peruana<br>
+        <div id="resp14Clase1" class="mt-2"></div>
+
+        <p><strong>15. ¿Régimen de excepción. Estado de emergencia. En esta eventualidad, puede restringirse o suspenderse el ejercicio de los derechos constitucionales relativos?</strong></p>
+        <input type="radio" name="preg15Clase1" value="a"> a) A la libertad de opinión y expresión<br>
+        <input type="radio" name="preg15Clase1" value="b"> b) A la libertad y la seguridad personales<br>
+        <input type="radio" name="preg15Clase1" value="c"> c) A la libertad de conciencia y de religión<br>
+        <input type="radio" name="preg15Clase1" value="d"> d) A la igualdad ante la ley<br>
+        <input type="radio" name="preg15Clase1" value="e"> e) Al secreto y la inviolabilidad de sus comunicaciones y documentos privados<br>
+        <div id="resp15Clase1" class="mt-2"></div>
+
+        <p><strong>16. ¿Régimen de excepción. El plazo de estado de emergencia no excede de?</strong></p>
+        <input type="radio" name="preg16Clase1" value="a"> a) Treinta días<br>
+        <input type="radio" name="preg16Clase1" value="b"> b) Cuarenta y cinco días<br>
+        <input type="radio" name="preg16Clase1" value="c"> c) Setenta días<br>
+        <input type="radio" name="preg16Clase1" value="d"> d) Sesenta días<br>
+        <input type="radio" name="preg16Clase1" value="e"> e) Noventa días<br>
+        <div id="resp16Clase1" class="mt-2"></div>
+
+        <p><strong>17. ¿Régimen de excepción. En estado de emergencia, las fuerzas armadas asumen el control del orden interno si así lo dispone?</strong></p>
+        <input type="radio" name="preg17Clase1" value="a"> a) El presidente del comando conjunto de las fuerzas armadas<br>
+        <input type="radio" name="preg17Clase1" value="b"> b) El comandante general de la policía nacional del Perú<br>
+        <input type="radio" name="preg17Clase1" value="c"> c) El presidente de la república<br>
+        <input type="radio" name="preg17Clase1" value="d"> d) El ministro de defensa y el ministro del interior<br>
+        <input type="radio" name="preg17Clase1" value="e"> e) El decreto de emergencia<br>
+        <div id="resp17Clase1" class="mt-2"></div>
+
+        <p><strong>18. ¿Régimen de excepción. El presidente de la república, con acuerdo de consejo de ministros, puede decretar el estado de sitio en caso de?</strong></p>
+        <input type="radio" name="preg18Clase1" value="a"> a) Catástrofe<br>
+        <input type="radio" name="preg18Clase1" value="b"> b) Perturbación de la paz<br>
+        <input type="radio" name="preg18Clase1" value="c"> c) Perturbación del orden interno<br>
+        <input type="radio" name="preg18Clase1" value="d"> d) Graves circunstancias que afectan la vida y la nación<br>
+        <input type="radio" name="preg18Clase1" value="e"> e) Guerra civil<br>
+        <div id="resp18Clase1" class="mt-2"></div>
+
+        <p><strong>19. ¿Régimen de excepción. Estado de sitio. El plazo correspondiente no excede de?</strong></p>
+        <input type="radio" name="preg19Clase1" value="a"> a) Cuarenta y cinco días<br>
+        <input type="radio" name="preg19Clase1" value="b"> b) Treinta días<br>
+        <input type="radio" name="preg19Clase1" value="c"> c) Sesenta días<br>
+        <input type="radio" name="preg19Clase1" value="d"> d) Cuarenta días<br>
+        <input type="radio" name="preg19Clase1" value="e"> e) Noventa días<br>
+        <div id="resp19Clase1" class="mt-2"></div>
+
+        <p><strong>20. ¿Régimen de excepción. Estado de sitio en caso de guerra o invasión, con mención de los derechos fundamentales cuyo ejercicio?</strong></p>
+        <input type="radio" name="preg20Clase1" value="a"> a) Es limitado a las disposiciones del comando político militar<br>
+        <input type="radio" name="preg20Clase1" value="b"> b) No se restringe o suspendebr<br>
+        <input type="radio" name="preg20Clase1" value="c"> c) Se restringen derechos fundamentales pero su ejercicio no se suspende<br>
+        <input type="radio" name="preg20Clase1" value="d"> d) Es libre y sujeto a control<br>
+        <input type="radio" name="preg20Clase1" value="e"> e) Sí se restringe y suspende<br>
+        <div id="resp20Clase1" class="mt-2"></div>
+
+        <button type="submit" class="btn btn-success mt-3">Enviar</button>
+        <button type="button" class="btn btn-secondary mt-3" onclick="reiniciarClase1()">Reiniciar</button>
+        <div id="resultadoClase1" class="mt-3 fw-bold"></div>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Clase 2 -->    
+<div class="tab-pane fade" id="clase2">
+       <h3>🎥 Video: Declaración Universal de los DD.HH</h3>
+       <iframe width="100%" height="250" src="https://www.youtube.com/embed/R9aXbh3yoEg" frameborder="0" allowfullscreen></iframe>
+      
+
+
+      <h4 class="mt-4">📄 PDF</h4>
+      <a href="documentos/DerechosUniversales.pdf" class="btn btn-primary" target="_blank">Ver PDF</a>
+      
+      <h4 class="mt-4">🔊 Audio</h4>
+      <audio controls>
+        <source src="audio/DDHH.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      
+      <h4 class="mt-4">📝 Evaluación</h4>
+      <form id="formClase2" onsubmit="return corregirClase2(event)">
+        <p><strong>1. ¿Todos los seres humanos nacen libres e iguales en dignidad y?</strong></p>
+        <input type="radio" name="preg1Clase2" value="a"> a) Derechos<br>
+        <input type="radio" name="preg1Clase2" value="b"> b) Honra<br>
+        <input type="radio" name="preg1Clase2" value="c"> c) Deberes<br>
+        <input type="radio" name="preg1Clase2" value="d"> d) Obligaciones<br>
+        <input type="radio" name="preg1Clase2" value="e"> e) Atribuciones<br>
+        <div id="resp1Clase2" class="mt-2"></div>
+
+        <p><strong>2. ¿Todo individuo tiene derecho a la vida, a la libertad y a la seguridad de su?</strong></p>
+        <input type="radio" name="preg2Clase2" value="a"> a) Familia<br>
+        <input type="radio" name="preg2Clase2" value="b"> b) Persona<br>
+        <input type="radio" name="preg2Clase2" value="c"> c) Propiedad<br>
+        <input type="radio" name="preg2Clase2" value="d"> d) Vida<br>
+        <input type="radio" name="preg2Clase2" value="e"> e) Salud<br>
+        <div id="resp2Clase2" class="mt-2"></div>
+
+        <p><strong>3. ¿Nadie estará sometido a esclavitud ni a servidumbre; la esclavitud y la trata de esclavos están prohibidas en todas sus?</strong></p>
+        <input type="radio" name="preg3Clase2" value="a"> a) Formas<br>
+        <input type="radio" name="preg3Clase2" value="b"> b) Partes<br>
+        <input type="radio" name="preg3Clase2" value="c"> c) Tipologias<br>
+        <input type="radio" name="preg3Clase2" value="d"> d) Crueldades<br>
+        <input type="radio" name="preg3Clase2" value="e"> e) Violencias<br>
+        <div id="resp3Clase2" class="mt-2"></div>
+
+        <p><strong>4. ¿Nadie será sometido a torturas ni a penas o tratos crueles, inhumanos o?</strong></p>
+        <input type="radio" name="preg4Clase2" value="a"> a) Leves<br>
+        <input type="radio" name="preg4Clase2" value="b"> b) Ligeros<br>
+        <input type="radio" name="preg4Clase2" value="c"> c) Degradantes<br>
+        <input type="radio" name="preg4Clase2" value="d"> d) Insensibles<br>
+        <input type="radio" name="preg4Clase2" value="e"> e) Desproporcionados<br>
+        <div id="resp4Clase2" class="mt-2"></div>
+
+        <p><strong>5. ¿Todo ser humano tiene derecho, en todas partes, al reconocimiento de su personalidad?</strong></p>
+        <input type="radio" name="preg5Clase2" value="a"> a) Juridica<br>
+        <input type="radio" name="preg5Clase2" value="b"> b) Legal<br>
+        <input type="radio" name="preg5Clase2" value="c"> c) Privada<br>
+        <input type="radio" name="preg5Clase2" value="d"> d) Reservada<br>
+        <input type="radio" name="preg5Clase2" value="e"> e) Secreta<br>
+        <div id="resp5Clase2" class="mt-2"></div>
+
+        <p><strong>6. ¿Todos son iguales ante la ley y tienen, sin distinción, derecho a igual protección de la?</strong></p>
+        <input type="radio" name="preg6Clase2" value="a"> a) Justicia<br>
+        <input type="radio" name="preg6Clase2" value="b"> b) Nacion<br>
+        <input type="radio" name="preg6Clase2" value="c"> c) Ley<br>
+        <input type="radio" name="preg6Clase2" value="d"> d) Autoridad<br>
+        <input type="radio" name="preg6Clase2" value="e"> e) Fiscalia<br>
+        <div id="resp6Clase2" class="mt-2"></div>
+
+        <p><strong>7. ¿Todos  tienen  derecho  a  igual  protección  contra  toda  discriminación  que  infrinja  esta declaración y contra toda provocación a tal?</strong></p>
+        <input type="radio" name="preg7Clase2" value="a"> a) Desigualdad<br>
+        <input type="radio" name="preg7Clase2" value="b"> b) Diferencia<br>
+        <input type="radio" name="preg7Clase2" value="c"> c) Abuso<br>
+        <input type="radio" name="preg7Clase2" value="d"> d) Ofensa<br>
+        <input type="radio" name="preg7Clase2" value="e"> e) Discriminación<br>
+        <div id="resp7Clase2" class="mt-2"></div>
+
+        <p><strong>8. ¿Toda persona tiene derecho a un recurso efectivo ante los tribunales nacionales competentes, que la ampara contra actos que violen sus derechos fundamentales reconocidos por la constitución o por la?</strong></p>
+        <input type="radio" name="preg8Clase2" value="a"> a) Autoridad<br>
+        <input type="radio" name="preg8Clase2" value="b"> b) Justicia<br>
+        <input type="radio" name="preg8Clase2" value="c"> c) Ley<br>
+        <input type="radio" name="preg8Clase2" value="d"> d) Fiscalia<br>
+        <input type="radio" name="preg8Clase2" value="e"> e) Policia<br>
+        <div id="resp8Clase2" class="mt-2"></div>
+
+        <p><strong>9. ¿Nadie podrá ser arbitrariamente detenido, preso ni?</strong></p>
+        <input type="radio" name="preg9Clase2" value="a"> a) Desterrado<br>
+        <input type="radio" name="preg9Clase2" value="b"> b) Liberado<br>
+        <input type="radio" name="preg9Clase2" value="c"> c) Intervenido<br>
+        <input type="radio" name="preg9Clase2" value="d"> d) Maltratado<br>
+        <input type="radio" name="preg9Clase2" value="e"> e) Aislado<br>
+        <div id="resp9Clase2" class="mt-2"></div>
+
+        <p><strong>10. ¿Toda  persona  acusada de delito tiene derecho a que se presuma su inocencia mientras  no se pruebe su culpabilidad, conforme a la ley y en juicio público en el que se le hayan asegurado?</strong></p>
+        <input type="radio" name="preg10Clase2" value="a"> a) Todas las pruebas necesarias de descargo<br>
+        <input type="radio" name="preg10Clase2" value="b"> b) La presencia del fiscal de turno<br>
+        <input type="radio" name="preg10Clase2" value="c"> c) Todas las garantías necesarias para su defensa<br>
+        <input type="radio" name="preg10Clase2" value="d"> d) Todas las pruebas necesarias en su contra<br>
+        <input type="radio" name="preg10Clase2" value="e"> e) La presencia de su abogado<br>
+        <div id="resp10Clase2" class="mt-2"></div>
+
+        <p><strong>11. ¿Nadie será condenado por actos u omisiones que en el momento de cometerse no fueron delictivos según el derecho nacional o?</strong></p>
+        <input type="radio" name="preg11Clase2" value="a"> a) Internacional<br>
+        <input type="radio" name="preg11Clase2" value="b"> b) Privado<br>
+        <input type="radio" name="preg11Clase2" value="c"> c) Público<br>
+        <input type="radio" name="preg11Clase2" value="d"> d) Civil<br>
+        <input type="radio" name="preg11Clase2" value="e"> e) Penal<br>
+        <div id="resp11Clase2" class="mt-2"></div>
+
+        <p><strong>12. ¿Toda persona tiene derecho a circular libremente y a elegir su residencia en el territorio de un?</strong></p>
+        <input type="radio" name="preg12Clase2" value="a"> a) Distrito<br>
+        <input type="radio" name="preg12Clase2" value="b"> b) Estado<br>
+        <input type="radio" name="preg12Clase2" value="c"> c) Condominio<br>
+        <input type="radio" name="preg12Clase2" value="d"> d) Complejo<br>
+        <input type="radio" name="preg12Clase2" value="e"> e) Departamento<br>
+        <div id="resp12Clase2" class="mt-2"></div>
+
+        <p><strong>13. ¿Toda persona tiene derecho a salir de cualquier país, incluso el propio, y a regresar a su?</strong></p>
+        <input type="radio" name="preg13Clase2" value="a"> a) Localidad<br>
+        <input type="radio" name="preg13Clase2" value="b"> b) Distrito<br>
+        <input type="radio" name="preg13Clase2" value="c"> c) Provincia<br>
+        <input type="radio" name="preg13Clase2" value="d"> d) Morada<br>
+        <input type="radio" name="preg13Clase2" value="e"> e) País<br>
+        <div id="resp13Clase2" class="mt-2"></div>
+
+        <p><strong>14. ¿En caso de persecución, toda persona tiene derecho a buscar asilo, y a disfrutar de el, en cualquier?</strong></p>
+        <input type="radio" name="preg14Clase2" value="a"> a) Lugar<br>
+        <input type="radio" name="preg14Clase2" value="b"> b) Territorio<br>
+        <input type="radio" name="preg14Clase2" value="c"> c) País<br>
+        <input type="radio" name="preg14Clase2" value="d"> d) Jurisdicción<br>
+        <input type="radio" name="preg14Clase2" value="e"> e) Embajada<br>
+        <div id="resp14Clase2" class="mt-2"></div>
+
+        <p><strong>15. ¿Toda persona tiene derecho a una?</strong></p>
+        <input type="radio" name="preg15Clase2" value="a"> a) Identidad<br>
+        <input type="radio" name="preg15Clase2" value="b"> b) Nacionalidad<br>
+        <input type="radio" name="preg15Clase2" value="c"> c) Gratificación<br>
+        <input type="radio" name="preg15Clase2" value="d"> d) Indenmización<br>
+        <input type="radio" name="preg15Clase2" value="e"> e) Reparación<br>
+        <div id="resp15Clase2" class="mt-2"></div>
+
+        <p><strong>16. ¿A nadie se privará arbitrariamente de su?</strong></p>
+        <input type="radio" name="preg16Clase2" value="a"> a) Honor<br>
+        <input type="radio" name="preg16Clase2" value="b"> b) Moral<br>
+        <input type="radio" name="preg16Clase2" value="c"> c) Religión<br>
+        <input type="radio" name="preg16Clase2" value="d"> d) Nacionalidad<br>
+        <input type="radio" name="preg16Clase2" value="e"> e) Identidad<br>
+        <div id="resp16Clase2" class="mt-2"></div>
+
+        <p><strong>17. ¿Los  hombres  y  las  mujeres,  a  partir  de  la  edad  núbil,  tienen  derecho,  sin  restricción alguna por motivos de raza, nacional o religión, a?</strong></p>
+        <input type="radio" name="preg17Clase2" value="a"> a) Casarse y fundar una cooperativa<br>
+        <input type="radio" name="preg17Clase2" value="b"> b) Casarse y fundar una familia<br>
+        <input type="radio" name="preg17Clase2" value="c"> c) Casarse y fundar una sociedad<br>
+        <input type="radio" name="preg17Clase2" value="d"> d) Casarse y fundar una empresa<br>
+        <input type="radio" name="preg17Clase2" value="e"> e) Casarse y adquirir bienes<br>
+        <div id="resp17Clase2" class="mt-2"></div>
+
+        <p><strong>18. ¿Solo mediante libre y pleno conocimiento de los futuros esposos podrá contraerse el?</strong></p>
+        <input type="radio" name="preg18Clase2" value="a"> a) Compromiso<br>
+        <input type="radio" name="preg18Clase2" value="b"> b) Matrimonio<br>
+        <input type="radio" name="preg18Clase2" value="c"> c) Trato<br>
+        <input type="radio" name="preg18Clase2" value="d"> d) Vínculo<br>
+        <input type="radio" name="preg18Clase2" value="e"> e) Entendimiento<br>
+        <div id="resp18Clase2" class="mt-2"></div>
+
+        <p><strong>19. ¿La familia es el elemento natural y fundamental de la?</strong></p>
+        <input type="radio" name="preg19Clase2" value="a"> a) Sociedad<br>
+        <input type="radio" name="preg19Clase2" value="b"> b) Nación<br>
+        <input type="radio" name="preg19Clase2" value="c"> c) Patria<br>
+        <input type="radio" name="preg19Clase2" value="d"> d) Institución<br>
+        <input type="radio" name="preg19Clase2" value="e"> e) Estado<br>
+        <div id="resp19Clase2" class="mt-2"></div>
+
+        <p><strong>20. ¿Toda persona tiene derecho a la propiedad, individual y?</strong></p>
+        <input type="radio" name="preg20Clase2" value="a"> a) Asociada<br>
+        <input type="radio" name="preg20Clase2" value="b"> b) Colectivamente<br>
+        <input type="radio" name="preg20Clase2" value="c"> c) Familiar<br>
+        <input type="radio" name="preg20Clase2" value="d"> d) Conyugal<br>
+        <input type="radio" name="preg20Clase2" value="e"> e) Social<br>
+        <div id="resp20Clase2" class="mt-2"></div>
+
+        
+        <button type="submit" class="btn btn-success mt-3">Enviar</button>
+        <button type="button" class="btn btn-secondary mt-3" onclick="reiniciarClase2()">Reiniciar</button>
+        <div id="resultadoClase2" class="mt-3 fw-bold"></div>
+      </form>
+    
+</div>
+
+<script>
+
+function corregirClase1(e) {
+  e.preventDefault();
+  let correctas = 0;
+
+  // Pregunta 1
+  const resp1 = document.querySelector('input[name="preg1Clase1"]:checked');
+  const div1 = document.getElementById("resp1Clase1");
+  if (resp1) {
+    if (resp1.value === 'b') {
+      correctas++;
+      div1.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div1.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div1.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+  // Pregunta 2
+  const resp2 = document.querySelector('input[name="preg2Clase1"]:checked');
+  const div2 = document.getElementById("resp2Clase1");
+  if (resp2) {
+    if (resp2.value === 'c') {
+      correctas++;
+      div2.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div2.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div2.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+  // Pregunta 3
+  const resp3 = document.querySelector('input[name="preg3Clase1"]:checked');
+  const div3 = document.getElementById("resp3Clase1");
+  if (resp3) {
+    if (resp3.value === 'c') {
+      correctas++;
+      div3.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div3.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div3.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 4
+  const resp4 = document.querySelector('input[name="preg4Clase1"]:checked');
+  const div4 = document.getElementById("resp4Clase1");
+  if (resp4) {
+    if (resp4.value === 'e') {
+      correctas++;
+      div4.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div4.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div4.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 5
+  const resp5 = document.querySelector('input[name="preg5Clase1"]:checked');
+  const div5 = document.getElementById("resp5Clase1");
+  if (resp5) {
+    if (resp5.value === 'b') {
+      correctas++;
+      div5.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div5.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div5.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+
+// Pregunta 6
+  const resp6 = document.querySelector('input[name="preg6Clase1"]:checked');
+  const div6 = document.getElementById("resp6Clase1");
+  if (resp6) {
+    if (resp6.value === 'e') {
+      correctas++;
+      div6.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div6.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div6.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+  
+// Pregunta 7
+  const resp7 = document.querySelector('input[name="preg7Clase1"]:checked');
+  const div7 = document.getElementById("resp7Clase1");
+  if (resp7) {
+    if (resp7.value === 'a') {
+      correctas++;
+      div7.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div7.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div7.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 8
+  const resp8 = document.querySelector('input[name="preg8Clase1"]:checked');
+  const div8 = document.getElementById("resp8Clase1");
+  if (resp8) {
+    if (resp8.value === 'd') {
+      correctas++;
+      div8.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div8.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: d)</span>';
+    }
+  } else {
+    div8.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 9
+  const resp9 = document.querySelector('input[name="preg9Clase1"]:checked');
+  const div9 = document.getElementById("resp9Clase1");
+  if (resp9) {
+    if (resp9.value === 'b') {
+      correctas++;
+      div9.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div9.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div9.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 10
+  const resp10 = document.querySelector('input[name="preg10Clase1"]:checked');
+  const div10 = document.getElementById("resp10Clase1");
+  if (resp10) {
+    if (resp10.value === 'e') {
+      correctas++;
+      div10.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div10.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div10.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 11
+  const resp11 = document.querySelector('input[name="preg11Clase1"]:checked');
+  const div11 = document.getElementById("resp11Clase1");
+  if (resp11) {
+    if (resp11.value === 'c') {
+      correctas++;
+      div11.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div11.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div11.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 12
+  const resp12 = document.querySelector('input[name="preg12Clase1"]:checked');
+  const div12 = document.getElementById("resp12Clase1");
+  if (resp12) {
+    if (resp12.value === 'b') {
+      correctas++;
+      div12.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div12.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div12.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 13
+  const resp13 = document.querySelector('input[name="preg13Clase1"]:checked');
+  const div13 = document.getElementById("resp13Clase1");
+  if (resp13) {
+    if (resp13.value === 'a') {
+      correctas++;
+      div13.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div13.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div13.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 14
+  const resp14 = document.querySelector('input[name="preg14Clase1"]:checked');
+  const div14 = document.getElementById("resp14Clase1");
+  if (resp14) {
+    if (resp14.value === 'e') {
+      correctas++;
+      div14.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div14.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div14.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 15
+  const resp15 = document.querySelector('input[name="preg15Clase1"]:checked');
+  const div15 = document.getElementById("resp15Clase1");
+  if (resp15) {
+    if (resp15.value === 'b') {
+      correctas++;
+      div15.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div15.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div15.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 16
+  const resp16 = document.querySelector('input[name="preg16Clase1"]:checked');
+  const div16 = document.getElementById("resp16Clase1");
+  if (resp16) {
+    if (resp16.value === 'd') {
+      correctas++;
+      div16.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div16.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: d)</span>';
+    }
+  } else {
+    div16.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 17
+  const resp17 = document.querySelector('input[name="preg17Clase1"]:checked');
+  const div17 = document.getElementById("resp17Clase1");
+  if (resp17) {
+    if (resp17.value === 'c') {
+      correctas++;
+      div17.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div17.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div17.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 18
+  const resp18 = document.querySelector('input[name="preg18Clase1"]:checked');
+  const div18 = document.getElementById("resp18Clase1");
+  if (resp18) {
+    if (resp18.value === 'e') {
+      correctas++;
+      div18.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div18.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div18.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 19
+  const resp19 = document.querySelector('input[name="preg19Clase1"]:checked');
+  const div19 = document.getElementById("resp19Clase1");
+  if (resp19) {
+    if (resp19.value === 'a') {
+      correctas++;
+      div19.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div19.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div19.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 20
+  const resp20 = document.querySelector('input[name="preg20Clase1"]:checked');
+  const div20 = document.getElementById("resp20Clase1");
+  if (resp20) {
+    if (resp20.value === 'b') {
+      correctas++;
+      div20.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div20.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div20.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+  document.getElementById("resultadoClase1").innerText = `Respuestas correctas: ${correctas} de 20`;
+}
+
+
+
+function reiniciarClase1() {
+  document.getElementById("formClase1").reset();
+  document.getElementById("resp1Clase1").innerHTML = "";
+  document.getElementById("resp2Clase1").innerHTML = "";
+  document.getElementById("resp3Clase1").innerHTML = "";
+  document.getElementById("resp4Clase1").innerHTML = "";
+  document.getElementById("resp5Clase1").innerHTML = "";
+  document.getElementById("resp6Clase1").innerHTML = "";
+  document.getElementById("resp7Clase1").innerHTML = "";
+  document.getElementById("resp8Clase1").innerHTML = "";
+  document.getElementById("resp9Clase1").innerHTML = "";
+  document.getElementById("resp10Clase1").innerHTML = "";
+  document.getElementById("resp11Clase1").innerHTML = "";
+  document.getElementById("resp12Clase1").innerHTML = "";
+  document.getElementById("resp13Clase1").innerHTML = "";
+  document.getElementById("resp14Clase1").innerHTML = "";
+  document.getElementById("resp15Clase1").innerHTML = "";
+  document.getElementById("resp16Clase1").innerHTML = "";
+  document.getElementById("resp17Clase1").innerHTML = "";
+  document.getElementById("resp18Clase1").innerHTML = "";
+  document.getElementById("resp19Clase1").innerHTML = "";
+  document.getElementById("resp20Clase1").innerHTML = "";
+  document.getElementById("resultadoClase1").innerHTML = "";
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function corregirClase2(e) {
+  e.preventDefault();
+  let correctas = 0;
+
+  // Pregunta 1
+  const resp1 = document.querySelector('input[name="preg1Clase2"]:checked');
+  const div1 = document.getElementById("resp1Clase2");
+  if (resp1) {
+    if (resp1.value === 'a') {
+      correctas++;
+      div1.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div1.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div1.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+  // Pregunta 2
+  const resp2 = document.querySelector('input[name="preg2Clase2"]:checked');
+  const div2 = document.getElementById("resp2Clase2");
+  if (resp2) {
+    if (resp2.value === 'b') {
+      correctas++;
+      div2.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div2.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div2.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+ 
+// Pregunta 3
+  const resp3 = document.querySelector('input[name="preg3Clase2"]:checked');
+  const div3 = document.getElementById("resp3Clase2");
+  if (resp3) {
+    if (resp3.value === 'a') {
+      correctas++;
+      div3.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div3.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div3.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+ 
+// Pregunta 4
+  const resp4 = document.querySelector('input[name="preg4Clase2"]:checked');
+  const div4 = document.getElementById("resp4Clase2");
+  if (resp3) {
+    if (resp4.value === 'c') {
+      correctas++;
+      div4.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div4.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div4.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 5
+  const resp5 = document.querySelector('input[name="preg5Clase2"]:checked');
+  const div5 = document.getElementById("resp5Clase2");
+  if (resp5) {
+    if (resp5.value === 'a') {
+      correctas++;
+      div5.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div5.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div5.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+  
+// Pregunta 6
+  const resp6 = document.querySelector('input[name="preg6Clase2"]:checked');
+  const div6 = document.getElementById("resp6Clase2");
+  if (resp6) {
+    if (resp6.value === 'c') {
+      correctas++;
+      div6.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div6.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div6.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 7
+  const resp7 = document.querySelector('input[name="preg7Clase2"]:checked');
+  const div7 = document.getElementById("resp7Clase2");
+  if (resp7) {
+    if (resp7.value === 'e') {
+      correctas++;
+      div7.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div7.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div7.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 8
+  const resp8 = document.querySelector('input[name="preg8Clase2"]:checked');
+  const div8 = document.getElementById("resp8Clase2");
+  if (resp8) {
+    if (resp8.value === 'c') {
+      correctas++;
+      div8.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div8.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div8.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 9
+  const resp9 = document.querySelector('input[name="preg9Clase2"]:checked');
+  const div9 = document.getElementById("resp9Clase2");
+  if (resp9) {
+    if (resp9.value === 'a') {
+      correctas++;
+      div9.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div9.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div9.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 10
+  const resp10 = document.querySelector('input[name="preg10Clase2"]:checked');
+  const div10 = document.getElementById("resp10Clase2");
+  if (resp10) {
+    if (resp10.value === 'c') {
+      correctas++;
+      div10.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div10.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div10.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 11
+  const resp11 = document.querySelector('input[name="preg11Clase2"]:checked');
+  const div11 = document.getElementById("resp11Clase2");
+  if (resp11) {
+    if (resp11.value === 'a') {
+      correctas++;
+      div11.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div11.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div11.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 12
+  const resp12 = document.querySelector('input[name="preg12Clase2"]:checked');
+  const div12 = document.getElementById("resp12Clase2");
+  if (resp12) {
+    if (resp12.value === 'b') {
+      correctas++;
+      div12.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div12.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div12.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 13
+  const resp13 = document.querySelector('input[name="preg13Clase2"]:checked');
+  const div13 = document.getElementById("resp13Clase2");
+  if (resp13) {
+    if (resp13.value === 'e') {
+      correctas++;
+      div13.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div13.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: e)</span>';
+    }
+  } else {
+    div13.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 14
+  const resp14 = document.querySelector('input[name="preg14Clase2"]:checked');
+  const div14 = document.getElementById("resp14Clase2");
+  if (resp14) {
+    if (resp14.value === 'c') {
+      correctas++;
+      div14.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div14.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: c)</span>';
+    }
+  } else {
+    div14.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 15
+  const resp15 = document.querySelector('input[name="preg15Clase2"]:checked');
+  const div15 = document.getElementById("resp15Clase2");
+  if (resp15) {
+    if (resp15.value === 'b') {
+      correctas++;
+      div15.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div15.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div15.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 16
+  const resp16 = document.querySelector('input[name="preg16Clase2"]:checked');
+  const div16 = document.getElementById("resp16Clase2");
+  if (resp16) {
+    if (resp16.value === 'd') {
+      correctas++;
+      div16.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div16.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: d)</span>';
+    }
+  } else {
+    div16.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 17
+  const resp17 = document.querySelector('input[name="preg17Clase2"]:checked');
+  const div17 = document.getElementById("resp17Clase2");
+  if (resp17) {
+    if (resp17.value === 'b') {
+      correctas++;
+      div17.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div17.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div17.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 18
+  const resp18 = document.querySelector('input[name="preg18Clase2"]:checked');
+  const div18 = document.getElementById("resp18Clase2");
+  if (resp18) {
+    if (resp18.value === 'b') {
+      correctas++;
+      div18.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div18.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div18.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 19
+  const resp19 = document.querySelector('input[name="preg19Clase2"]:checked');
+  const div19 = document.getElementById("resp19Clase2");
+  if (resp19) {
+    if (resp19.value === 'a') {
+      correctas++;
+      div19.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div19.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: a)</span>';
+    }
+  } else {
+    div19.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+
+// Pregunta 20
+  const resp20 = document.querySelector('input[name="preg20Clase2"]:checked');
+  const div20 = document.getElementById("resp20Clase2");
+  if (resp20) {
+    if (resp20.value === 'b') {
+      correctas++;
+      div20.innerHTML = '<span class="text-success">✅ Correcto</span>';
+    } else {
+      div20.innerHTML = '<span class="text-danger">❌ Incorrecto. Respuesta correcta: b)</span>';
+    }
+  } else {
+    div20.innerHTML = '<span class="text-warning">⚠️ No marcaste ninguna opción</span>';
+  }
+   document.getElementById("resultadoClase2").innerText = `Respuestas correctas: ${correctas} de 20`;
+}
+
+
+function reiniciarClase2() {
+  document.getElementById("formClase2").reset();
+  document.getElementById("resp1Clase2").innerHTML = "";
+  document.getElementById("resp2Clase2").innerHTML = "";
+  document.getElementById("resp3Clase2").innerHTML = "";
+  document.getElementById("resp4Clase2").innerHTML = "";
+  document.getElementById("resp5Clase2").innerHTML = "";
+  document.getElementById("resp6Clase2").innerHTML = "";
+  document.getElementById("resp7Clase2").innerHTML = "";
+  document.getElementById("resp8Clase2").innerHTML = "";
+  document.getElementById("resp9Clase2").innerHTML = "";
+  document.getElementById("resp10Clase2").innerHTML = "";
+  document.getElementById("resp11Clase2").innerHTML = "";
+  document.getElementById("resp12Clase2").innerHTML = "";
+  document.getElementById("resp13Clase2").innerHTML = "";
+  document.getElementById("resp14Clase2").innerHTML = "";
+  document.getElementById("resp15Clase2").innerHTML = "";
+  document.getElementById("resp16Clase2").innerHTML = "";
+  document.getElementById("resp17Clase2").innerHTML = "";
+  document.getElementById("resp18Clase2").innerHTML = "";
+  document.getElementById("resp19Clase2").innerHTML = "";
+  document.getElementById("resp20Clase2").innerHTML = "";
+  document.getElementById("resultadoClase2").innerHTML = "";
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
